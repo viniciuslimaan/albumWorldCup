@@ -1,0 +1,143 @@
+@import "styles.scss";
+
+/* Others */
+.container { padding: 25px 0; }
+
+.header { 
+    display: flex;
+    margin-bottom: 30px; 
+    flex-wrap: wrap;
+
+    .left { 
+        @media (min-width: 768px) { flex: 1; }
+        @media (max-width: 767px) { width: 100%; }
+
+        #flag { 
+            img { 
+                width: 180px; 
+                border: 3px solid white;
+            } 
+        }
+        
+        #coachCC {
+            background: $primary;
+            font-size: 1.2rem;
+            width: 65%;
+            padding: 5px;
+        
+            @media (max-width: 1024px) { width: 100%; }
+        }
+        
+        #cups { font-size: 1.5rem; }
+    }
+
+    .right {
+        display: flex;
+        justify-content: right;
+        align-items: flex-end;
+        gap: 20px;
+        
+        flex: 1;
+        @media (max-width: 767px) { justify-content: center; }
+
+        #buttons, .navgation {
+            display: flex;
+            gap: 10px;
+
+            @media (max-width: 767px) { margin-top: 15px; }
+
+            .disable {
+                filter: brightness(.7)!important;
+                
+                &:hover { cursor: auto; }
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                width: 50px;
+                height: 50px;
+                border: none;
+                border-radius: 50%;
+                font-size: 1.5rem;
+                cursor: pointer;
+                color: $font;
+                background: $primary;
+    
+                &:hover {
+                    filter: brightness(.9);
+                    transition: .5s ease;
+                }
+            }
+        }
+
+        hr {
+            height: 50px;
+            border: none;
+            border-left: 1px solid $bgPrimary;
+        }
+    }
+}
+
+#players {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    width: 100%;
+
+    @media (max-width: 767px) { justify-content: center; }
+}
+
+.card, .card-exist {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $primary;
+    width: 200px;
+    height: 300px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+
+    @media (max-width: 767px) {
+        width: 300px; 
+        height: 400px;
+    }
+}
+
+.card {
+    p {
+        position: absolute;
+        bottom: 15px;
+    }
+} 
+
+.card-exist {
+    flex-direction: column;
+
+    img { 
+        width: 90%;
+        user-select: none;
+    }
+
+    .info {
+        position: absolute;
+        text-align: center;
+        top: 15px;
+        right: 15px;
+        
+        img { width: 35px; }
+
+        p {
+            line-height: 100%;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}

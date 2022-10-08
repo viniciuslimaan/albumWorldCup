@@ -1,0 +1,213 @@
+/* Colors */
+/* Font weight */
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(320deg, #220710, #8e0a31);
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+}
+@media (min-width: 768px) {
+  body {
+    min-height: 100vh;
+  }
+}
+
+/* Fonts */
+h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 130%;
+  color: #fff;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+a.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 3px;
+  padding: 15px 20px;
+  font-size: 1.8rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  background: #fff;
+  width: 190px;
+}
+@media (max-width: 767px) {
+  a.btn {
+    width: 80%;
+  }
+}
+a.btn:hover {
+  filter: brightness(0.9);
+  transition: 0.5s ease;
+}
+a.btn p {
+  font-size: 1.2rem;
+}
+a.btn hr {
+  height: 120%;
+  border: none;
+  border-left: 1px solid #f1f1f1;
+}
+
+.container {
+  max-width: 1330px;
+  margin: auto;
+  padding: 5% 0;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 95%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 1025px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Others */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1330px;
+  margin: auto;
+  padding: 5% 0;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 95%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 1025px) {
+  .container {
+    width: 70%;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.header h1 {
+  line-height: 115%;
+}
+.header img {
+  margin-bottom: 25px;
+  width: 150px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.header .subtitle {
+  color: #E7E7E7;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.header .buttons {
+  margin-top: 40px;
+}
+
+#teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 75px;
+}
+#teams a {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  padding: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  background: #8e0a31;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 767px) {
+  #teams a {
+    width: 300px;
+  }
+}
+#teams a p {
+  color: #fff;
+}
+#teams a img {
+  height: 25px;
+  margin-right: 15px;
+}
+#teams a:hover {
+  filter: brightness(0.9);
+  transition: 0.5s ease;
+}/*# sourceMappingURL=home.css.map */

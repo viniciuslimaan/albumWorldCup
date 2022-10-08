@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/assets/logo.png" type="image/x-icon">
+    <title>Álbum online - Copa do mundo Catar 2022 | Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="./src/assets/logo.png" alt="Logo da copa do mundo catar 2022">
+            <h1>Copa do mundo Catar 2022</h1>
+            <p class="subtitle">Álbum online</p>
+            <!-- Navgation -->
+            <div class="buttons">
+                <a href="./src/view/shop.html" class="btn">
+                    <iconify-icon inline icon="ant-design:shop-twotone"></iconify-icon>
+                    <hr>
+                    <p>Loja</p>
+                </a>
+                <a href="./src/view/album.html?team=ale" class="btn">
+                    <iconify-icon inline icon="ant-design:folder-open-twotone"></iconify-icon> 
+                    <hr>
+                    <p>Álbum</p>
+                </a>
+                <a href="./src/view/repeated.html" class="btn">
+                    <iconify-icon inline icon="ph:cards-duotone"></iconify-icon>
+                    <hr>
+                    <p>Repetidas</p>
+                </a>
+            </div>
+        </div>
+        <!-- All teams -->
+        <div id="teams"></div>
+    </div>
+</body>
+
+<script src="./src/js/data.js"></script>
+<script src="./src/js/home.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+
+</html>

@@ -1,0 +1,218 @@
+/* Colors */
+/* Font weight */
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(320deg, #220710, #8e0a31);
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+}
+@media (min-width: 768px) {
+  body {
+    min-height: 100vh;
+  }
+}
+
+/* Fonts */
+h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 130%;
+  color: #fff;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+a.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 3px;
+  padding: 15px 20px;
+  font-size: 1.8rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  background: #fff;
+  width: 190px;
+}
+@media (max-width: 767px) {
+  a.btn {
+    width: 80%;
+  }
+}
+a.btn:hover {
+  filter: brightness(0.9);
+  transition: 0.5s ease;
+}
+a.btn p {
+  font-size: 1.2rem;
+}
+a.btn hr {
+  height: 120%;
+  border: none;
+  border-left: 1px solid #f1f1f1;
+}
+
+.container {
+  max-width: 1330px;
+  margin: auto;
+  padding: 5% 0;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 95%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 1025px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Others */
+.header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.header h1 {
+  margin-bottom: 20px;
+}
+
+#repeatedPlayers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  #repeatedPlayers {
+    justify-content: center;
+  }
+}
+#repeatedPlayers .empty {
+  text-align: center;
+}
+#repeatedPlayers .empty span {
+  font-size: 4.5rem;
+}
+#repeatedPlayers .empty p {
+  margin-top: -5px;
+}
+#repeatedPlayers .empty p, #repeatedPlayers .empty span {
+  color: #E7E7E7;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: 200px;
+  height: 300px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.card .quantity {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -15px;
+  left: -15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #8e0a31;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.card .info {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-align: center;
+}
+.card .info img {
+  width: 35px;
+}
+.card .info p {
+  line-height: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .card {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.card > p {
+  position: absolute;
+  bottom: 15px;
+}/*# sourceMappingURL=repeated.css.map */
